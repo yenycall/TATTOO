@@ -177,6 +177,11 @@ nav ul li a:hover {
     align-items: flex-end;
 }
 
+.pageNum a{
+    text-decoration: none;
+    color: inherit;
+}
+
 /*--HOME--*/
 
 #home{

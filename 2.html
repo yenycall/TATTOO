@@ -1,36 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>TATTOO</title>
     <link rel="icon" href="img/favicon.ico" type="img/png">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="content.css">
 </head>
-<body>
-<div class="container">
+</head>
 
-    <header>
-        <div class="header-container">
-            <div class="logoH">
-                <a href="index.html">
-                    <img src="img/tatLogo2-2.svg" alt="logo">
-                </a>
+<body>
+    <div class="container">
+
+        <header>
+            <div class="header-container">
+                <div class="logoH">
+                    <a href="index.html">
+                        <img src="img/tatLogo2-2.svg" alt="logo">
+                    </a>
+                </div>
+
+                <nav>
+                    <ul>
+                        <li><a href="index.html#home"><span class="preB">Home</span></a></li>
+                        <li><a href="index.html#main-grid"><span class="preB">Menu</span></a></li>
+                    </ul>
+
+
+                    <div class="pageNum">
+                        <span class="terF"><a href="2.html">#_2</a></span>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <div class="music-container">
+
+            <div class="playlist">
+                <h2 class="section-title">Playlist</h2>
+                <div class="track-list">
+                    <div class="track-item">
+                        <div class="track-title">Cruel Summer</div>
+                        <div class="track-artist">Taylor Swift</div>
+                    </div>
+                </div>
             </div>
 
-            <nav>
-                <ul>
-                    <li><a href="index.html#home"><span class="preB">Home</span></a></li>
-                    <li><a href="index.html#main-grid"><span class="preB">Menu</span></a></li>
-                </ul>
-
-
-                <div class="pageNum">
-                    <span class="terF">#_2</span>
+            <div class="main-content">
+                <div class="banner-section">
+                    <h2 class="section-title">Favorite Lyrics</h2>
+                    <div class="banner-container">
+                        <div class="banner-slider">
+                            <div class="banner-slide">
+                                <div class="banner-title">Cruel Summer</div>
+                                <div class="banner-text">This summer is the apocalypse.</div>
+                                <div class="banner-text">Devils roll the dice, angels roll their eyes</div>
+                                <div class="banner-text">Summer's a knife</div>
+                                <div class="banner-text">It's a cruel summer with you</div>
+                            </div>
+                            <div class="banner-slide">
+                                <div class="banner-title">4ever 2009</div>
+                                <div class="banner-text">Sample lyrics for 4ever 2009</div>
+                            </div>
+                            <div class="banner-slide">
+                                <div class="banner-title">Kakee</div>
+                                <div class="banner-text">Sample lyrics for Kakee</div>
+                            </div>
+                            <div class="banner-slide">
+                                <div class="banner-title">グランドエスケープ</div>
+                                <div class="banner-text">Sample lyrics for Grand Escape</div>
+                            </div>
+                        </div>
+                        <div class="banner-dots">
+                            <div class="dot active"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                        </div>
+                    </div>
                 </div>
-            </nav>
-        </div>
-    </header>
 
+                <div class="sound-wave-section">
+                    <div class="wave-image"></div>
+                    <div class="wave-info">
+                        <div class="social-info">
+                            <div class="profile-pic"></div>
+                            <div class="user-info">
+                                <div>@themildtown</div>
+                                <div>SoundWaveTatto</div>
+                            </div>
+                        </div>
+                        <div class="korean-text">
+                            음악을 수집하는 새로운 방식을 터득하다.<br>
+                            음악을 수집하는 새로운 방식을 터득하다.<br>
+                            음악을 수집하는 새로운 방식을 터득하다.<br>
+                            음악을 수집하는 새로운 방식을 터득하다.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="playlist-sidebar">
+                <div class="current-track">
+                    <img src="/api/placeholder/400/400" alt="Current track">
+                    <div class="track-info">
+                        <div class="track-title">Cruel Summer</div>
+                        <div class="track-artist">Taylor Swift</div>
+                    </div>
+                </div>
+                <div class="track-list-mini">
+                    <div class="track-item-mini" data-title="4ever 2009" data-artist="The Veronicas">
+                        <img src="/api/placeholder/100/100" alt="4ever 2009">
+                        <div class="track-info">
+                            <div class="track-title">4ever 2009</div>
+                            <div class="track-artist">The Veronicas</div>
+                        </div>
+                    </div>
+                    <div class="track-item-mini" data-title="Kakee" data-artist="Sofi Tukker">
+                        <img src="/api/placeholder/100/100" alt="Kakee">
+                        <div class="track-info">
+                            <div class="track-title">Kakee</div>
+                            <div class="track-artist">Sofi Tukker</div>
+                        </div>
+                    </div>
+                    <div class="track-item-mini" data-title="グランドエスケープ" data-artist="RADWIMPS">
+                        <img src="/api/placeholder/100/100" alt="グランドエスケープ">
+                        <div class="track-info">
+                            <div class="track-title">グランドエスケープ</div>
+                            <div class="track-artist">RADWIMPS</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+
+    <audio class="audio-player" controls>
+        <source src="" type="audio/mpeg">
+    </audio>
 
 
 
@@ -58,7 +168,10 @@
             </div>
         </div>
     </footer>
-</div>
 
+    </div>
+
+    <script src="common2.js"></script>
 </body>
+
 </html>

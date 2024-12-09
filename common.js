@@ -101,3 +101,8 @@ async function animateToTarget() {
 // 초기 애니메이션 시작
 createLetters(startText);
 setTimeout(animateToTarget, 1000);
+
+
+
+
+
