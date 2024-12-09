@@ -1,0 +1,614 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css');
+@import url('https://fonts.cdnfonts.com/css/termina-test');
+
+body {
+    font-family: 'pretendard', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+html {
+    scroll-behavior: smooth; /* 부드러운 스크롤 효과 추가 */
+}
+
+.container{
+    width:80%;
+    margin:0 auto;
+    position: relative;
+}
+
+/*--Type--*/
+
+.terminaT {
+    font-family: 'Termina Test', sans-serif;
+    font-size: 2rem; /*--3.5vh--*/
+    font-weight: 400;
+}
+
+.title {
+    font-family: 'Termina Test', sans-serif;
+    font-size: 15vw; /*--3.5vh--*/
+    font-weight: 500;
+    padding-bottom: 6rem;
+    color: #212121;
+}
+
+.title2 {
+    font-family: 'Termina Test', sans-serif;
+    font-size: 17rem; /*--3.5vh--*/
+    font-weight: 500;
+}
+
+.preB{
+    font-family: 'Termina Test', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.preC{
+    font-weight: 300;
+}
+
+.terminaT2 {
+    font-family: 'Termina Test', sans-serif;
+    font-size: 6rem;
+    font-weight: 400;
+}
+
+.terminaT3 {
+    font-family: 'Termina Test', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.mainT0{
+    font-family: 'Termina Test', sans-serif;
+    font-size: 1.1vw;
+    font-weight: 500;
+}
+
+.mainT1{
+    font-family: 'Termina Test', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.terF{
+    font-family: 'Termina Test', sans-serif;
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: #FF3A3A;
+    padding: 0;
+    margin: 0;
+}
+
+/*--SCROLL BAR--*/
+
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #FF3A3A; /* 스크롤바 색상 */
+    border-radius: 10px; /* 스크롤바 둥근 테두리 */
+}
+
+::-webkit-scrollbar-track {
+    background: #ffffff;  /*스크롤바 뒷 배경 색상*/
+}
+
+::-webkit-scrollbar:horizontal {
+    width: 0;
+    height: 0;
+}
+
+/*--HEADER--*/
+
+header {
+    display: flex;
+    height: 10vh;
+    top:0;
+    z-index: 2;
+    position: fixed;
+    width: 80%; /* 전체 너비 사용 */
+    justify-content: center; /* 가로 중앙 정렬 */
+    align-items: center; /* 세로 중앙 정렬 */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.logoH img{
+    width: 8rem;
+}
+
+.logoH :hover{
+    color: #FF3A3A;
+}
+
+.logoH{
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    align-items: flex-end;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(210, 210, 210, 0.5);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #FF3A3A;
+    display: block;
+    padding: 0.5rem 1.5rem;
+}
+
+nav ul li a:hover {
+    color: #ffffff;
+    background-color: #FF3A3A;
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+}
+
+.pageNum{
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    align-items: flex-end;
+}
+
+/*--HOME--*/
+
+#home{
+    width: 100%;
+    padding-top: 3rem;
+}
+
+.main{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+.TXTcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*height: 100vh;*/
+    margin: 0;
+}
+
+.letter {
+    color: #212121;
+    font-size: 14vw;
+    font-family: "Termina Test", sans-serif;
+    font-weight: 500;
+    display: inline-block;
+    margin: 0 4px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.letter.shuffle {
+    animation: shakeX 0.3s ease-in-out;
+}
+
+@keyframes shakeX {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-10px); }
+    75% { transform: translateX(10px); }
+}
+
+
+
+
+
+
+.main-grid .mg:hover {
+    /*background-color: #FF3A3A;*/
+    color: #FF3A3A;
+    transition: all 0.1s ease;
+    outline: 1.5px solid #FF3A3A;
+    outline-offset: -1.5px;
+}
+
+.main-grid .mg:hover .terminaT{
+    font-weight: 550;
+    /*transition: all 0.3s ease;*/
+}
+
+.main-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 1vw;
+    height: 85vh;
+    padding-top:6rem;
+}
+
+.main-grid a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.mg{
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 2rem;
+    /*border: 1.5px solid #FF3A3A;*/
+}
+
+.grid01{
+    grid-column: 1 / span 1;
+    grid-row: span 2;
+}
+
+.grid02{
+    grid-column: 2 / span 1;
+    grid-row: span 1;
+}
+
+.grid03{
+    grid-column: 3 / span 1;
+    grid-row: span 1;
+}
+
+.grid04{
+    grid-column: 4 / span 1;
+    grid-row: span 2;
+}
+
+.grid05{
+    grid-column: 4 / span 1;
+    grid-row: 3 / span 1;
+}
+
+.grid06{
+    grid-column: 3 / span 2;
+    grid-row: 4 / span 1;
+}
+
+.grid07{
+    grid-column: 2 / span 1;
+    grid-row: span 1;
+}
+
+.grid08{
+    grid-column: 1 / span 1;
+    grid-row: 3 / span 2;
+}
+
+.grid09{
+    grid-column: 2 / span 2;
+    grid-row: 2 / span 2;
+}
+
+.gridTxt {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+
+
+
+
+.Card {
+    display: grid;
+    grid-template-rows: repeat(9, auto);
+    position: relative;
+    padding-top:6rem;
+}
+
+.Card .Title{
+    color: #FF3A3A;
+}
+
+.Card .terminaT{
+    color: #FF3A3A;
+}
+
+.cd a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.cd {
+    position: relative;
+    height: 80px; /* height를 min-height로 변경 */
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border-top: 1px solid #000000;
+    overflow: hidden;
+    text-align: right;
+}
+
+.cdTxt{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+
+.cdTxt2{
+    font-family: 'Termina Test', sans-serif;
+    font-size: 1rem; /*--3.5vh--*/
+    font-weight: 400;
+    line-height: 1.6rem;
+}
+
+.cd:hover {
+    height: 200px; /* 호버 시 높이 증가 */
+    background-color: #FF3A3A;
+    color: white;
+    transition: all 1s ease;
+    z-index: 1;
+    padding: 3rem;
+}
+
+.cd:hover .terminaT{
+    color: white;
+}
+
+/*!* 카드 배경색 *!*/
+/*.card01 { background-color: #ff69b4; }*/
+/*.card02 { background-color: #4a90e2; }*/
+/*.card03 { background-color: #50e3c2; }*/
+/*.card04 { background-color: #f5a623; }*/
+/*.card05 { background-color: #7ed321; }*/
+/*.card06 { background-color: #9013fe; }*/
+/*.card07 { background-color: #4a4a4a; }*/
+/*.card08 { background-color: #d0021b; }*/
+/*.card09 { background-color: #8b572a; }*/
+
+.view-toggle {
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    align-items: flex-end;
+    background: rgba(210, 210, 210, 0.5);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    padding: 4px;
+    gap: 4px;
+}
+
+.toggle-background {
+    position: absolute;
+    left: 4px;
+    top: 4px;
+    width: calc(50% - 4px);
+    height: calc(100% - 8px);
+    background-color: #FF3A3A;
+    border-radius: 8px;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    pointer-events: none;
+}
+
+.toggle-btn {
+    position: relative;
+    flex: 1;
+    padding: 0.5rem 1.5rem;
+    border: none;
+    background: transparent;
+    color: #FF3A3A;
+    font-weight: 500;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    z-index: 1;
+}
+
+.toggle-btn.active {
+    color: white;
+}
+
+/* Card View가 활성화될 때 배경 이동 - 수정된 선택자 */
+.view-toggle .toggle-btn[data-view="card"].active ~ .toggle-background {
+    transform: translateX(calc(100%));
+}
+
+/* 뷰 모드에 따른 display 설정 */
+.main-grid, .Card {
+    display: none;
+}
+
+.main-grid.active {
+    display: grid;
+}
+
+.Card.active {
+    display: grid;
+}
+
+/*--FOOTER--*/
+
+.footer {
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 10rem;
+    margin-bottom: 3rem;
+    font-family: 'Termina Test', sans-serif;
+    border-top: 1px solid #000000;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+}
+
+.footer-left h2 {
+    font-size: 3rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+.copyright {
+    margin-top: auto;
+}
+
+.copyright p {
+    margin-top: 5rem;
+    margin-bottom: -1rem;
+    font-size: 0.9rem;
+}
+
+.logo {
+    font-size: 10.5rem;
+    font-weight: 500;
+}
+
+.logo sup {
+    font-size: 2rem;
+    vertical-align: top;      /* super에서 top으로 변경 */
+    position: relative;       /* 추가 */
+    top: 2rem;
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 100%;
+    position: relative;
+    margin-top: 1.5rem;
+}
+
+.contact-info {
+    text-align: right;
+}
+
+.email {
+    display: block;
+    font-size: 2rem;
+    color: #000;
+    text-decoration: none;
+    margin-bottom: 1rem;
+}
+
+.personal-info {
+    display: flex;
+    font-size: 0.9rem;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.personal-info a{
+    text-decoration: none;
+    color: #000;
+}
+
+.personal-info a:hover{
+    color: #FF3A3A;
+}
+
+.back-to-top {
+    background-color: #000;
+    color: white;
+    border-radius: 50px;
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    text-decoration: none;
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    position: absolute;  /* 추가 */
+    bottom: -13rem;          /* 추가 */
+    right: 0;
+}
+
+/* 호버 효과 */
+.email:hover,
+.back-to-top:hover {
+    background-color: #FF3A3A;
+    color: white;
+    transition: all 0.1s ease;
+}
+
+.logo1 {
+    font-family: "Termina Test", sans-serif;
+    font-size: 15vw;
+    font-weight: 500;
+    position: relative;
+}
+
+.o-container {
+    display: inline-block;
+    position: relative;
+}
+
+.o-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+}
+
+.circle-inner {
+    position: absolute;
+    width: 3vw;
+    height: 3vw;
+    background-color: #FF3A3A;
+    border-radius: 50%;
+    /* 중심으로부터 100px 반지름의 원을 그리도록 위치 조정 */
+    /*top: -100px;  !* 원의 반지름만큼 위로 *!*/
+    /*left: -1rem;  !* circle-inner의 너비의 절반만큼 왼쪽으로 *!*/
+    transform-origin: bottom;  /* 회전 중심을 원의 아래쪽(o-wrapper의 중심)으로 설정 */
+    animation: circle-orbit 2s linear infinite;
+}
+
+.o-container:nth-of-type(2) .circle-inner {
+    animation: circle-orbit-reverse 2s linear infinite;
+}
+
+@keyframes circle-orbit {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes circle-orbit-reverse {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
