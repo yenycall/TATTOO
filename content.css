@@ -101,7 +101,7 @@
 
 
 .playlist {
-    flex: 0 0 15rem;
+    width: 20%;
     background-color: #e0e0e0;
     border-radius: 1rem;
     display: flex;
@@ -135,7 +135,7 @@
 }
 
 .main-content {
-    flex: 1;
+    width: 50%;
 }
 
 .banner-section {
@@ -157,12 +157,14 @@
 
 .banner-slide {
     flex: 0 0 100%;
-    padding: 2rem 1.5rem;
+    /* width: 25%; */
+    padding: 2rem;
     color: white;
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    box-sizing: border-box;
 }
 
 .bannerT01 {
@@ -224,6 +226,8 @@
     background-color: #f0f0f0;
     padding: 1.5rem;
     border-radius: 1rem;
+    flex-direction: column;
+    flex:1;
 }
 
 .wave-image {
@@ -261,7 +265,7 @@
 }
 
 .playlist-sidebar {
-    flex: 0 0 20rem;
+    width: 20%;
     background-color: #e0e0e0;
     padding: 1.5rem;
     border-radius: 1rem;
@@ -332,8 +336,7 @@
     height: 80vh;
     display: flex;
     width: 100%;
-    justify-content: center;
-    /* padding: 2rem; */
+    box-sizing: border-box;
     gap: 2rem;
-    margin: 0 auto;
+    justify-content: space-between;
 }
