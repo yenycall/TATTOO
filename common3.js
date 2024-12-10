@@ -111,7 +111,7 @@ document.querySelectorAll('.track-item-mini').forEach(track => {
         // 다른 트랙을 클릭한 경우
         if (currentTrack !== title) {
             // 오디오 소스 변경
-            audio.src = `/audio/${title.toLowerCase().replace(/\s+/g, '-')}.mp3`;
+            audio.src = `audio/${title.toLowerCase().replace(/\s+/g, '-')}.mp3`;
             currentTrack = title;
         }
         
