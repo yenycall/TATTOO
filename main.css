@@ -9,12 +9,12 @@ body {
 }
 
 html {
-    scroll-behavior: smooth; /* 부드러운 스크롤 효과 추가 */
+    scroll-behavior: smooth;
 }
 
-.container{
-    width:80%;
-    margin:0 auto;
+.container {
+    width: 80%;
+    margin: 0 auto;
     position: relative;
 }
 
@@ -22,38 +22,38 @@ html {
 
 .terminaT {
     font-family: 'Termina Test', sans-serif;
-    font-size: 2rem; /*--3.5vh--*/
+    font-size: 2rem;
     font-weight: 400;
 }
 
 .title {
     font-family: 'Termina Test', sans-serif;
-    font-size: 15vw; /*--3.5vh--*/
+    font-size: 15vw;
     font-weight: 500;
     padding-bottom: 6rem;
     color: #212121;
 }
 
-.titleNC{
+.titleNC {
     font-family: 'Termina Test', sans-serif;
-    font-size: 5.5vw; /*--3.5vh--*/
+    font-size: 5.5vw;
     font-weight: 500;
     color: #fff;
 }
 
 .title2 {
     font-family: 'Termina Test', sans-serif;
-    font-size: 17rem; /*--3.5vh--*/
+    font-size: 17rem;
     font-weight: 500;
 }
 
-.preB{
+.preB {
     font-family: 'Termina Test', sans-serif;
     font-size: 1rem;
     font-weight: 500;
 }
 
-.preC{
+.preC {
     font-weight: 300;
 }
 
@@ -69,19 +69,19 @@ html {
     font-weight: 600;
 }
 
-.mainT0{
+.mainT0 {
     font-family: 'Termina Test', sans-serif;
     font-size: 1.1vw;
     font-weight: 500;
 }
 
-.mainT1{
+.mainT1 {
     font-family: 'Termina Test', sans-serif;
     font-size: 1.1rem;
     font-weight: 400;
 }
 
-.terF{
+.terF {
     font-family: 'Termina Test', sans-serif;
     font-size: 1.7rem;
     font-weight: 500;
@@ -101,12 +101,12 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #FF3A3A; /* 스크롤바 색상 */
-    border-radius: 10px; /* 스크롤바 둥근 테두리 */
+    background: #FF3A3A;
+    border-radius: 10px;
 }
 
 ::-webkit-scrollbar-track {
-    background: #ffffff;  /*스크롤바 뒷 배경 색상*/
+    background: #ffffff;
 }
 
 ::-webkit-scrollbar:horizontal {
@@ -119,25 +119,25 @@ html {
 header {
     display: flex;
     height: 10vh;
-    top:0;
+    top: 0;
     z-index: 2;
     position: fixed;
-    width: 80%; /* 전체 너비 사용 */
-    justify-content: center; /* 가로 중앙 정렬 */
-    align-items: center; /* 세로 중앙 정렬 */
+    width: 80%;
+    justify-content: center;
+    align-items: center;
     left: 50%;
     transform: translateX(-50%);
 }
 
-.logoH img{
+.logoH img {
     width: 8rem;
 }
 
-.logoH :hover{
+.logoH :hover {
     color: #FF3A3A;
 }
 
-.logoH{
+.logoH {
     display: flex;
     position: absolute;
     left: 0;
@@ -177,7 +177,7 @@ nav ul li a:hover {
     border-radius: 10px;
 }
 
-.pageNum{
+.pageNum {
     display: flex;
     position: absolute;
     right: 0;
@@ -186,19 +186,19 @@ nav ul li a:hover {
     align-items: flex-end;
 }
 
-.pageNum a{
+.pageNum a {
     text-decoration: none;
     color: inherit;
 }
 
 /*--HOME--*/
 
-#home{
+#home {
     width: 100%;
     padding-top: 3rem;
 }
 
-.main{
+.main {
     height: 90vh;
     display: flex;
     flex-direction: column;
@@ -230,9 +230,19 @@ nav ul li a:hover {
 }
 
 @keyframes shakeX {
-    0%, 100% { transform: translateX(0); }
-    25% { transform: translateX(-10px); }
-    75% { transform: translateX(10px); }
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-10px);
+    }
+
+    75% {
+        transform: translateX(10px);
+    }
 }
 
 
@@ -248,18 +258,18 @@ nav ul li a:hover {
     outline-offset: -1.5px;
 }
 
-.main-grid .mg:hover .terminaT{
+.main-grid .mg:hover .terminaT {
     font-weight: 550;
     /*transition: all 0.3s ease;*/
 }
 
-.main-grid{
+.main-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);
     gap: 1vw;
     height: 85vh;
-    padding-top:6rem;
+    padding-top: 6rem;
 }
 
 .main-grid a {
@@ -267,54 +277,54 @@ nav ul li a:hover {
     color: inherit;
 }
 
-.mg{
+.mg {
     background-color: #fff;
     border-radius: 20px;
     padding: 2rem;
     /*border: 1.5px solid #FF3A3A;*/
 }
 
-.grid01{
+.grid01 {
     grid-column: 1 / span 1;
     grid-row: span 2;
 }
 
-.grid02{
+.grid02 {
     grid-column: 2 / span 1;
     grid-row: span 1;
 }
 
-.grid03{
+.grid03 {
     grid-column: 3 / span 1;
     grid-row: span 1;
 }
 
-.grid04{
+.grid04 {
     grid-column: 4 / span 1;
     grid-row: span 2;
 }
 
-.grid05{
+.grid05 {
     grid-column: 4 / span 1;
     grid-row: 3 / span 1;
 }
 
-.grid06{
+.grid06 {
     grid-column: 3 / span 2;
     grid-row: 4 / span 1;
 }
 
-.grid07{
+.grid07 {
     grid-column: 2 / span 1;
     grid-row: span 1;
 }
 
-.grid08{
+.grid08 {
     grid-column: 1 / span 1;
     grid-row: 3 / span 2;
 }
 
-.grid09{
+.grid09 {
     grid-column: 2 / span 2;
     grid-row: 2 / span 2;
 }
@@ -334,25 +344,25 @@ nav ul li a:hover {
     display: grid;
     grid-template-rows: repeat(9, auto);
     position: relative;
-    padding-top:6rem;
+    padding-top: 6rem;
 }
 
-.Card .Title{
+.Card .Title {
     color: #FF3A3A;
 }
 
-.Card .terminaT{
+.Card .terminaT {
     color: #FF3A3A;
 }
 
-.cd a{
+.cd a {
     text-decoration: none;
     color: inherit;
 }
 
 .cd {
     position: relative;
-    height: 80px; /* height를 min-height로 변경 */
+    height: 80px;
     transition: all 0.3s ease;
     cursor: pointer;
     border-top: 1px solid #000000;
@@ -360,21 +370,21 @@ nav ul li a:hover {
     text-align: right;
 }
 
-.cdTxt{
+.cdTxt {
     display: flex;
     justify-content: space-between;
     margin-bottom: 3rem;
 }
 
-.cdTxt2{
+.cdTxt2 {
     font-family: 'Termina Test', sans-serif;
-    font-size: 1rem; /*--3.5vh--*/
+    font-size: 1rem;
     font-weight: 400;
     line-height: 1.6rem;
 }
 
 .cd:hover {
-    height: 200px; /* 호버 시 높이 증가 */
+    height: 200px;
     background-color: #FF3A3A;
     color: white;
     transition: all 1s ease;
@@ -382,20 +392,10 @@ nav ul li a:hover {
     padding: 3rem;
 }
 
-.cd:hover .terminaT{
+.cd:hover .terminaT {
     color: white;
 }
 
-/*!* 카드 배경색 *!*/
-/*.card01 { background-color: #ff69b4; }*/
-/*.card02 { background-color: #4a90e2; }*/
-/*.card03 { background-color: #50e3c2; }*/
-/*.card04 { background-color: #f5a623; }*/
-/*.card05 { background-color: #7ed321; }*/
-/*.card06 { background-color: #9013fe; }*/
-/*.card07 { background-color: #4a4a4a; }*/
-/*.card08 { background-color: #d0021b; }*/
-/*.card09 { background-color: #8b572a; }*/
 
 .view-toggle {
     display: flex;
@@ -440,13 +440,12 @@ nav ul li a:hover {
     color: white;
 }
 
-/* Card View가 활성화될 때 배경 이동 - 수정된 선택자 */
-.view-toggle .toggle-btn[data-view="card"].active ~ .toggle-background {
+.view-toggle .toggle-btn[data-view="card"].active~.toggle-background {
     transform: translateX(calc(100%));
 }
 
-/* 뷰 모드에 따른 display 설정 */
-.main-grid, .Card {
+.main-grid,
+.Card {
     display: none;
 }
 
@@ -504,8 +503,8 @@ nav ul li a:hover {
 
 .logo sup {
     font-size: 2rem;
-    vertical-align: top;      /* super에서 top으로 변경 */
-    position: relative;       /* 추가 */
+    vertical-align: top;
+    position: relative;
     top: 2rem;
 }
 
@@ -539,12 +538,12 @@ nav ul li a:hover {
     margin-bottom: 2rem;
 }
 
-.personal-info a{
+.personal-info a {
     text-decoration: none;
     color: #000;
 }
 
-.personal-info a:hover{
+.personal-info a:hover {
     color: #FF3A3A;
 }
 
@@ -558,8 +557,8 @@ nav ul li a:hover {
     margin-top: auto;
     display: flex;
     flex-direction: column;
-    position: absolute;  /* 추가 */
-    bottom: -13rem;          /* 추가 */
+    position: absolute;
+    bottom: -13rem;
     right: 0;
 }
 
@@ -598,10 +597,7 @@ nav ul li a:hover {
     height: 3vw;
     background-color: #FF3A3A;
     border-radius: 50%;
-    /* 중심으로부터 100px 반지름의 원을 그리도록 위치 조정 */
-    /*top: -100px;  !* 원의 반지름만큼 위로 *!*/
-    /*left: -1rem;  !* circle-inner의 너비의 절반만큼 왼쪽으로 *!*/
-    transform-origin: bottom;  /* 회전 중심을 원의 아래쪽(o-wrapper의 중심)으로 설정 */
+    transform-origin: bottom;
     animation: circle-orbit 2s linear infinite;
 }
 
@@ -613,6 +609,7 @@ nav ul li a:hover {
     from {
         transform: rotate(0deg);
     }
+
     to {
         transform: rotate(360deg);
     }
@@ -622,6 +619,7 @@ nav ul li a:hover {
     from {
         transform: rotate(0deg);
     }
+
     to {
         transform: rotate(360deg);
     }

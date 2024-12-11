@@ -2,21 +2,21 @@ document.addEventListener('DOMContentLoaded', function() {
     const gridView = document.querySelector('.main-grid');
     const cardView = document.querySelector('.Card');
     const viewToggle = document.querySelector('.view-toggle');
-    const toggleBtns = viewToggle.querySelectorAll('button');  // 모든 토글 버튼 선택
+    const toggleBtns = viewToggle.querySelectorAll('button');  
 
-    // 초기 상태 설정
+
     gridView.classList.add('active');
-    toggleBtns[0].classList.add('active');  // 첫 번째 버튼 활성화
+    toggleBtns[0].classList.add('active');  
 
     toggleBtns.forEach(btn => {
-        btn.classList.add('toggle-btn');  // 토글 버튼 클래스 추가
+        btn.classList.add('toggle-btn'); 
 
         btn.addEventListener('click', function() {
-            // 버튼 활성화 상태 변경
+
             toggleBtns.forEach(b => b.classList.remove('active'));
             this.classList.add('active');
 
-            // 뷰 모드 변경
+
             const viewMode = this.dataset.view;
             if (viewMode === 'grid') {
                 gridView.classList.add('active');
@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 gridView.classList.remove('active');
             }
 
-            // 해당 뷰로 스크롤
+
             const targetView = viewMode === 'grid' ? gridView : cardView;
             targetView.scrollIntoView({
                 behavior: 'smooth',
@@ -36,7 +36,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// 메인 타이포 애니메이션
 
 const startText = 'TATTOO';
 const targetText = 'TATOTO';
@@ -79,7 +78,7 @@ async function animateToTarget() {
     let currentArray = startText.split('');
     createLetters(currentArray.join(''));
 
-    // 여러 번 무작위로 섞기
+  
     for (let i = 0; i < 8; i++) {
         await new Promise(resolve => setTimeout(resolve, 300));
         const shuffled = shuffleArray([...currentArray]);
@@ -87,18 +86,18 @@ async function animateToTarget() {
         currentArray = shuffled;
     }
 
-    // 최종적으로 목표 텍스트로 변환
+
     await new Promise(resolve => setTimeout(resolve, 300));
     updateText(targetText);
 
-    // 잠시 기다린 후 다시 시작
+
     setTimeout(() => {
         isAnimating = false;
         animateToTarget();
     }, 2000);
 }
 
-// 초기 애니메이션 시작
+
 createLetters(startText);
 setTimeout(animateToTarget, 1000);
 

@@ -1,17 +1,17 @@
-.wave{
+.wave {
     display: flex;
 }
 
-.photoA{
+.photoA {
     width: 50%;
 }
 
-.tatW{
+.tatW {
     width: 50%;
     padding: 1.5rem 0 0 3rem;
 }
 
-.tatW1{
+.tatW1 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
@@ -19,30 +19,30 @@
     margin-top: 4rem;
 }
 
-.tatW2{
+.tatW2 {
     display: flex;
     justify-content: center;
     margin-top: -7.5vw;
     margin-bottom: -18rem;
 }
 
-.headTitle{
+.headTitle {
     margin-top: 9rem;
 }
 
-.headLine{
-    font-family: 'Termina Test',sans-serif;
-    font-size:2rem;
+.headLine {
+    font-family: 'Termina Test', sans-serif;
+    font-size: 2rem;
     font-weight: 500;
 }
 
-.tatW2 img{
+.tatW2 img {
     transform: rotate(-70deg);
     position: relative;
     z-index: -1;
 }
 
-.diary{
+.diary {
     aspect-ratio: 1/1;
     height: 100%;
     padding: 1rem;
@@ -54,30 +54,30 @@
     justify-content: space-between;
 }
 
-.diaryD{
+.diaryD {
     font-family: 'Termina Test', sans-serif;
     font-size: 0.7rem;
     font-weight: 400;
     color: #aaaaaa;
 }
 
-.diaryP{
+.diaryP {
     font-size: 0.9rem;
     font-weight: 500;
 }
 
-.diaryP0{
+.diaryP0 {
     font-size: 0.9rem;
     font-weight: 400;
     font-family: 'Termina Test', sans-serif;
 }
 
-.diaryTxt{
+.diaryTxt {
     font-size: 1rem;
     font-weight: 500;
 }
 
-.diaryTxt0{
+.diaryTxt0 {
     font-size: 1rem;
     font-weight: 500;
     font-family: 'Termina Test', sans-serif;
@@ -85,7 +85,7 @@
     color: #212121;
 }
 
-.diaryTxt2{
+.diaryTxt2 {
     font-size: 0.8rem;
     font-weight: 300;
     color: #888888;
@@ -93,41 +93,41 @@
 }
 
 
-.diary01{
+.diary01 {
     transform: rotate(10deg);
     background-color: #eaeaea;
 }
 
-.diary02{
+.diary02 {
     transform: rotate(-15deg);
     background-color: #212121;
     color: white;
 }
 
-.diary03{
+.diary03 {
     transform: rotate(5deg);
     background-color: #eaeaea;
 }
 
-.diary04{
+.diary04 {
     transform: rotate(-5deg);
     background-color: #212121;
     color: white;
 }
 
 
-.diary05{
+.diary05 {
     transform: rotate(13deg);
     background-color: #eaeaea;
 }
 
-.diary06{
+.diary06 {
     transform: rotate(-10deg);
     background-color: #212121;
     color: white;
 }
 
-.diary:hover{
+.diary:hover {
     transform: rotate(0deg);
     outline: 1.9px solid #ff3a3a;
     position: relative;
@@ -145,22 +145,22 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 0.5rem;
-  }
+}
 
-  .grid-item {
+.grid-item {
     aspect-ratio: 1;
     overflow: hidden;
     position: relative;
-  }
+}
 
-  .grid-item img {
+.grid-item img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: transform 0.3s ease;
-  }
+}
 
-  .photoA button {
+.photoA button {
     font-size: 0.9rem;
     font-weight: 200;
     display: block;
@@ -171,27 +171,27 @@
     border: none;
     cursor: pointer;
     text-align: left;
-  }
+}
 
-  .terCon {
+.terCon {
     font-family: 'Termina Test', sans-serif;
     font-size: 1.5rem;
     font-weight: 400;
 }
 
-.buttonTxt{
+.buttonTxt {
     display: flex;
     align-items: center;
 }
 
-  button:hover {
+button:hover {
     color: #ff3a3a;
     transition: all 0.5s ease;
-  }
+}
 
 
-   
-   .grid-item .hover-overlay {
+
+.grid-item .hover-overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -205,26 +205,26 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-   }
-   
-   .hover-text-top {
+}
+
+.hover-text-top {
     align-self: flex-start;
     font-size: 0.8rem;
-   }
-   
-   .hover-text-bottom {
+}
+
+.hover-text-bottom {
     align-self: flex-start;
     font-family: 'Termina Test', sans-serif;
     font-size: 0.65rem;
-   }
+}
 
-   .grid-item:hover .hover-overlay {
+.grid-item:hover .hover-overlay {
     opacity: 1;
-   }
-   
-   .grid-item:hover img {
+}
+
+.grid-item:hover img {
     transform: scale(1.2);
-   }
+}
 
 
 
@@ -272,8 +272,8 @@
 .main-content {
     width: 50%;
     height: 100%;
-    display: flex;           /* 추가 */
-    flex-direction: column;  /* 추가 */
+    display: flex;
+    flex-direction: column;
 }
 
 .banner-section {
@@ -309,61 +309,61 @@
 .BS01::before {
     content: '';
     position: absolute;
-    top: 30%;         /* 상하 가운데 정렬 */
-    left: 70%;        /* 좌우 가운데 정렬 */
-    transform: translate(-50%, -50%);  /* 정확한 중앙 배치를 위한 변환 */
+    top: 30%;
+    left: 70%;
+    transform: translate(-50%, -50%);
     width: 150%;
     height: 150%;
     background-image: url('img/banner1.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    z-index: -1;  /* 콘텐츠 뒤로 보내기 */
+    z-index: -1;
 }
 
 .BS02::before {
     content: '';
     position: absolute;
-    top: 30%;         /* 상하 가운데 정렬 */
-    left: 50%;        /* 좌우 가운데 정렬 */
-    transform: translate(-50%, -50%);  /* 정확한 중앙 배치를 위한 변환 */
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 102%;
     height: 140%;
     background-image: url('img/banner2.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    z-index: -1;  /* 콘텐츠 뒤로 보내기 */
+    z-index: -1;
 }
 
 .BS03::before {
     content: '';
     position: absolute;
-    top: 100%;         /* 상하 가운데 정렬 */
-    left: 50%;        /* 좌우 가운데 정렬 */
-    transform: translate(-50%, -50%);  /* 정확한 중앙 배치를 위한 변환 */
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 100%;
     height: 200%;
     background-image: url('img/banner3.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    z-index: -1;  /* 콘텐츠 뒤로 보내기 */
+    z-index: -1;
 }
 
 .BS04::before {
     content: '';
     position: absolute;
-    top: 100%;         /* 상하 가운데 정렬 */
-    left: 50%;        /* 좌우 가운데 정렬 */
-    transform: translate(-50%, -50%);  /* 정확한 중앙 배치를 위한 변환 */
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 100%;
     height: 200%;
     background-image: url('img/banner4.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    z-index: -1;  /* 콘텐츠 뒤로 보내기 */
+    z-index: -1;
 }
 
 .banner-slide::after {
@@ -373,8 +373,8 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.55);  /* 검은색 50% 투명도 */
-    z-index: -1;  /* 이미지보다는 위, 콘텐츠보다는 아래 */
+    background-color: rgba(0, 0, 0, 0.55);
+    z-index: -1;
 }
 
 
@@ -391,7 +391,7 @@
     font-weight: 300;
 }
 
-.banner-title{
+.banner-title {
     display: flex;
     flex-direction: column;
     gap: 0.4rem;
@@ -437,7 +437,7 @@
     gap: 2rem;
     margin-top: 2rem;
     border-radius: 1rem;
-    flex: 1;                /* 남은 공간 모두 차지 */
+    flex: 1;
     min-height: 0;
 }
 
@@ -450,7 +450,7 @@
     overflow: hidden;
 }
 
-.wave-mov video{
+.wave-mov video {
     width: 100%;
     border-radius: 1rem;
     height: 100%;
@@ -467,26 +467,26 @@
     justify-content: space-between;
 }
 
-.info1{
+.info1 {
     font-size: 1rem;
     line-height: 1.4rem;
     font-weight: 500;
     color: #000;
 }
 
-.info2{
+.info2 {
     font-size: 0.9rem;
     line-height: 1.4rem;
     font-weight: 300;
     color: #212121;
 }
 
-.info2 a{
+.info2 a {
     text-decoration: none;
     color: inherit;
 }
 
-.info2 a:hover{
+.info2 a:hover {
     color: #ff3a3a;
 }
 
@@ -516,7 +516,7 @@
     line-height: 1.5;
 }
 
-.info3{
+.info3 {
     font-size: 1rem;
     font-weight: 600;
     color: #333;
@@ -568,7 +568,7 @@
     border-radius: 0.25rem;
 }
 
-.track-item{
+.track-item {
     margin-bottom: 2rem;
     padding-left: 0.25rem;
 }
@@ -623,36 +623,36 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 2; /* 메시지가 오버레이 위에 표시되도록 */
+    z-index: 2;
 }
 
 
-.typeGrid{
+.typeGrid {
     display: grid;
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto auto auto;
     width: fit-content;
 }
 
-.tg{
-    font-family: 'Termina Test',sans-serif;
-    font-size:4.5rem;
+.tg {
+    font-family: 'Termina Test', sans-serif;
+    font-size: 4.5rem;
     font-weight: 600;
 }
 
-.tg01{
+.tg01 {
     grid-column: 1;
     grid-row: 1;
     justify-self: start;
 }
 
-.tg sup{
+.tg sup {
     position: relative;
     top: -5rem;
     right: -6.5rem;
 }
 
-.circle{
+.circle {
     width: 1rem;
     height: 1rem;
     border-radius: 1rem;
@@ -666,46 +666,46 @@
     justify-self: start;
 }
 
-.tg03{
+.tg03 {
     grid-column: 2;
     grid-row: 3;
     justify-self: start;
 }
 
-.tg04{
+.tg04 {
     grid-column: 3;
     grid-row: 4;
     white-space: nowrap;
     justify-self: start;
 }
 
-.main-typo{
+.main-typo {
     display: flex;
-    padding:10rem 0;
+    padding: 10rem 0;
     width: 100%;
     justify-content: space-between;
     align-items: flex-end;
 }
 
-.myPhoto{
+.myPhoto {
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
 }
 
-.myPhoto img{
+.myPhoto img {
     width: 15rem;
     /* max-width: 30vw;
     min-width: 2vw; */
 }
 
-.profiles{
+.profiles {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
 }
 
-.profile1{
+.profile1 {
     grid-column: span 1;
     display: grid;
     grid-template-columns: auto auto;
@@ -713,7 +713,7 @@
     border-top: 1px solid #212121;
 }
 
-.profile2{
+.profile2 {
     grid-column: span 1;
     border-radius: 1rem;
     display: flex;
@@ -734,13 +734,13 @@
     transition: transform 0.8s;
     transform-style: preserve-3d;
     cursor: pointer;
-  }
-  
-  .card.flipped {
+}
+
+.card.flipped {
     transform: rotateY(180deg);
-  }
-  
-  .card-front{
+}
+
+.card-front {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -750,9 +750,9 @@
     justify-content: center;
     background-color: #101010;
     border-radius: 10px;
-  }
-  
-  .card-back {
+}
+
+.card-back {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -762,9 +762,9 @@
     border-radius: 10px;
     transform: rotateY(180deg);
     background-color: #101010;
-  }
+}
 
-  .secret-content{
+.secret-content {
     grid-column: span 1;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -772,12 +772,12 @@
     margin-top: 1.5rem;
     margin-left: 2rem;
     /* padding: 2rem; */
-  }
+}
 
 
 
 
-.private{
+.private {
     font-family: 'Termina Test', sans-serif;
     font-size: 4rem;
     font-weight: 600;
@@ -787,12 +787,12 @@
     transition: all 0.5s ease;
 }
 
-.private:hover{
+.private:hover {
     transform: rotate(0deg);
     background-color: #fff;
 }
 
-.profT{
+.profT {
     margin-top: 1.5rem;
     margin-left: 0.3rem;
     margin-bottom: 3rem;
@@ -801,32 +801,32 @@
     font-weight: 400;
 }
 
-.proftxt{
+.proftxt {
     margin-bottom: 3rem;
     margin-left: 0.3rem;
     font-size: 1.05rem;
     font-weight: 500;
 }
 
-.proftxt0{
+.proftxt0 {
     font-family: 'Termina Test', sans-serif;
     line-height: 1.7rem;
 }
 
-.profTS{
+.profTS {
     font-family: 'Termina Test', sans-serif;
     font-size: 2rem;
     font-weight: 400;
     width: fit-content;
 }
 
-.proftxtS{
+.proftxtS {
     margin-bottom: 3rem;
     font-size: 1.05rem;
     font-weight: 500;
 }
 
-.proftxtS0{
+.proftxtS0 {
     font-family: 'Termina Test', sans-serif;
     line-height: 1.7rem;
 }
@@ -834,80 +834,80 @@
 
 
 
-.nameCard{
+.nameCard {
     display: grid;
     grid-template-columns: 1fr 2fr 2fr;
     gap: 1rem;
     margin-top: 10rem;
 }
 
-.ncTxt{
+.ncTxt {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.ncT0{
+.ncT0 {
     font-size: 0.9rem;
     font-weight: 400;
     color: #212121;
     line-height: 1.4rem;
 }
 
-.ncD{
+.ncD {
     color: #ff3a3a;
     font-weight: 500;
 }
 
-.ncT{
+.ncT {
     font-family: 'Termina Test', sans-serif;
     font-size: 2rem;
     font-weight: 400;
     line-height: 2.4rem;
 }
 
-.nc{
+.nc {
     aspect-ratio: 9 / 5;
     background-color: #101010;
     padding: 1.5rem;
 }
 
-.nc1{
+.nc1 {
     margin-top: 0.5rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.nc1 a{
+.nc1 a {
     color: inherit;
     text-decoration: none;
     transition: all 0.3s ease;
 }
 
-.nc1 a:hover{
+.nc1 a:hover {
     background-color: #ff3a3a;
     color: #fff;
 }
 
-.ncName{
+.ncName {
     color: #fff;
     font-weight: 300;
     margin-bottom: 6rem;
 }
 
-.ncJob{
+.ncJob {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.ncLine{
+.ncLine {
     border-top: 0.95px solid #fff;
     width: 18.7rem;
 }
 
-.job{
+.job {
     font-family: 'Termina Test', sans-serif;
     font-size: 0.9rem;
     font-weight: 300;
@@ -915,7 +915,7 @@
 }
 
 
-.ncTer{
+.ncTer {
     font-family: 'Termina Test', sans-serif;
     font-size: 1.2rem;
     color: #fff;
@@ -923,25 +923,25 @@
     margin-right: 0.5rem;
 }
 
-.nc1-2{
+.nc1-2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     color: white;
     gap: 0.5rem
 }
 
-.contT{
+.contT {
     font-size: 0.9rem;
     font-weight: 500;
 }
 
-.contTxt{
+.contTxt {
     text-align: right;
     font-size: 0.9rem;
     font-weight: 400;
 }
 
-#downloadBtn{
+#downloadBtn {
     font-family: 'Termina Test', sans-serif;
     font-size: 0.8rem;
     color: #fff;
@@ -954,18 +954,18 @@
     transform: all 0.3s ease;
 }
 
-#downloadBtn:hover{
+#downloadBtn:hover {
     background-color: #ff3a3a;
 }
 
-.nc2{
+.nc2 {
     margin-top: 0.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.circle-innerN{
+.circle-innerN {
     background-color: #ff3a3a;
     width: 1rem;
     height: 1rem;
@@ -973,11 +973,11 @@
     position: absolute;
     top: 55%;
     left: 30%;
-    opacity:0;
+    opacity: 0;
     transition: opacity 0.5s ease;
 }
 
-.circle-innerN0{
+.circle-innerN0 {
     background-color: #ff3a3a;
     width: 1rem;
     height: 1rem;
@@ -989,42 +989,44 @@
     transition: opacity 0.5s ease;
 }
 
-.nc2:hover .circle-innerN{
+.nc2:hover .circle-innerN {
     opacity: 1;
 }
 
-.nc2:hover .circle-innerN0{
+.nc2:hover .circle-innerN0 {
     opacity: 1;
 }
 
 
-.timelineT{
-    font-family: 'Termina Test',sans-serif;
-    font-size:2rem;
+.timelineT {
+    font-family: 'Termina Test', sans-serif;
+    font-size: 2rem;
     font-weight: 500;
     margin-top: 10rem;
     margin-bottom: 2rem;
 }
 
-.tlNum{
-    font-family: 'Termina Test',sans-serif;
-    font-size:1.2rem;
+.tlNum {
+    font-family: 'Termina Test', sans-serif;
+    font-size: 1.2rem;
     font-weight: 400;
 }
 
-.timeLine{
+.timeLine {
     display: grid;
     grid-template-columns: repeat(7, minmax(25%, 25%));
     border: 1px solid #000;
     height: 30rem;
-    overflow-x: auto; /* 가로 스크롤 활성화 */
-    scroll-behavior: smooth; /* 부드러운 스크롤 */
+    overflow-x: auto;
+    /* 가로 스크롤 활성화 */
+    scroll-behavior: smooth;
+    /* 부드러운 스크롤 */
     border: 1px solid #000;
     height: 30rem;
     scroll-behavior: smooth;
 }
 
-.tl{
+.tl {
     padding: 1.5rem;
     border-left: 1px solid #000;
     display: flex;
@@ -1039,49 +1041,49 @@
 .tl.show {
     opacity: 1;
     transform: translateX(0);
-  }
+}
 
-.tl01{
+.tl01 {
     border: none;
 }
 
-.tlYear{
+.tlYear {
     font-family: 'Termina Test', sans-serif;
     font-size: 2rem;
     font-weight: 400;
     color: #212121;
 }
 
-.tlMonth{
+.tlMonth {
     font-family: 'Termina Test', sans-serif;
     font-size: 1.5rem;
     font-weight: 300;
     line-height: 3rem;
 }
 
-.tattooist{
+.tattooist {
     font-size: 0.9rem;
     font-weight: 400;
     color: #aaaaaa;
 }
 
-.tattooist a{
+.tattooist a {
     color: inherit;
     text-decoration: none;
 }
 
-.tattooist a:hover{
-    color:#ff3a3a;
+.tattooist a:hover {
+    color: #ff3a3a;
 }
 
-.tlItxt{
+.tlItxt {
     line-height: 1.8rem;
     font-size: 0.9rem;
     font-weight: 400;
     color: #212121;
 }
 
-/* 스크롤바 스타일링 유지 */
+
 .timeLine::-webkit-scrollbar {
     height: 0;
 }
@@ -1102,68 +1104,68 @@
 
 .tl01 {
     background-image: url('tattoos/wave1.png');
-    background-size: 50% auto;  /* 너비는 요소의 80%, 높이는 자동 비율 계산 */
-    background-position: right top;  /* 오른쪽 하단 정렬 */
+    background-size: 50% auto;
+    background-position: right top;
     background-repeat: no-repeat;
     overflow: hidden;
 }
 
 .tl02 {
     background-image: url('tattoos/tl02.png');
-    background-size: 50% auto;  /* 너비는 요소의 80%, 높이는 자동 비율 계산 */
-    background-position: right top;  /* 오른쪽 하단 정렬 */
+    background-size: 50% auto;
+    background-position: right top;
     background-repeat: no-repeat;
     overflow: hidden;
 }
 
 .tl03 {
     background-image: url('tattoos/tl03.png');
-    background-size: 50% auto;  /* 너비는 요소의 80%, 높이는 자동 비율 계산 */
-    background-position: right top;  /* 오른쪽 하단 정렬 */
+    background-size: 50% auto;
+    background-position: right top;
     background-repeat: no-repeat;
     overflow: hidden;
 }
 
 .tl04 {
     background-image: url('tattoos/tl04.png');
-    background-size: 50% auto;  /* 너비는 요소의 80%, 높이는 자동 비율 계산 */
-    background-position: right top;  /* 오른쪽 하단 정렬 */
+    background-size: 50% auto;
+    background-position: right top;
     background-repeat: no-repeat;
     overflow: hidden;
 }
 
 .tl05 {
     background-image: url('tattoos/tl05.png');
-    background-size: 50% auto;  /* 너비는 요소의 80%, 높이는 자동 비율 계산 */
-    background-position: right top;  /* 오른쪽 하단 정렬 */
+    background-size: 50% auto;
+    background-position: right top;
     background-repeat: no-repeat;
     overflow: hidden;
 }
 
 .tl06 {
     background-image: url('tattoos/peach.jpg');
-    background-size: 50% auto;  /* 너비는 요소의 80%, 높이는 자동 비율 계산 */
-    background-position: right top;  /* 오른쪽 하단 정렬 */
+    background-size: 50% auto;
+    background-position: right top;
     background-repeat: no-repeat;
     overflow: hidden;
 }
 
 .tl07 {
     background-image: url('tattoos/tl07.png');
-    background-size: 50% auto;  /* 너비는 요소의 80%, 높이는 자동 비율 계산 */
-    background-position: right top;  /* 오른쪽 하단 정렬 */
+    background-size: 50% auto;
+    background-position: right top;
     background-repeat: no-repeat;
     overflow: hidden;
 }
 
-.interview{
+.interview {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
     margin-top: 10rem;
 }
 
-.interviewT{
+.interviewT {
     border-top: 1px solid #000;
     border-bottom: 1px solid #000;
     display: flex;
@@ -1172,59 +1174,59 @@
     padding: 1.5rem 0;
 }
 
-.ivT{
-    font-family: 'Termina Test',sans-serif;
-    font-size:2rem;
+.ivT {
+    font-family: 'Termina Test', sans-serif;
+    font-size: 2rem;
     font-weight: 500;
     padding-left: 0.3rem;
     margin-bottom: 2rem;
 }
 
-.ivNum{
-    font-family: 'Termina Test',sans-serif;
-    font-size:1.2rem;
+.ivNum {
+    font-family: 'Termina Test', sans-serif;
+    font-size: 1.2rem;
     font-weight: 400;
 }
 
-.ivTxt{
+.ivTxt {
     line-height: 1.7rem;
     font-weight: 400;
     padding-left: 0.3rem;
 }
 
-.ivTalk{
+.ivTalk {
     display: grid;
     grid-template-rows: auto auto auto auto auto auto auto auto;
     gap: 1rem;
 }
 
-.ivTalk-container{
+.ivTalk-container {
     background-color: #eaeaea;
     border-radius: 1rem;
     padding: 1.5rem;
 }
 
-.ivChat{
+.ivChat {
     padding: 0.5rem 1rem;
     font-size: 0.9rem;
     line-height: 1.4rem;
 }
 
-.ivChatQ{
+.ivChatQ {
     background-color: white;
     color: black;
     border-radius: 0.7rem 0.7rem 0.7rem 0rem;
     width: fit-content;
 }
 
-.ivChatA{
+.ivChatA {
     background-color: #212121;
     color: white;
     border-radius: 0.7rem 0.7rem 0rem 0.7rem;
     margin-left: 4.15rem;
 }
 
-.gallType{
+.gallType {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -1232,7 +1234,7 @@
 }
 
 
-.gall01{
+.gall01 {
     font-family: 'Termina Test', sans-serif;
     font-size: 3rem;
     font-weight: 500;
@@ -1240,21 +1242,21 @@
     margin-bottom: 1rem;
 }
 
-.gall02{
+.gall02 {
     display: flex;
     white-space: nowrap;
     margin-top: 5rem;
     margin-bottom: 10rem;
 }
 
-.gall2-1{
+.gall2-1 {
     font-family: 'Termina Test', sans-serif;
     font-size: 3rem;
     font-weight: 500;
     color: #000;
 }
 
-.gall2-2{
+.gall2-2 {
     font-family: 'Termina Test', sans-serif;
     font-size: 1.5rem;
     font-weight: 400;
@@ -1263,7 +1265,7 @@
     white-space: nowrap;
 }
 
-.gall03{
+.gall03 {
     width: 100%;
     display: flex;
     justify-content: flex-start;
@@ -1273,7 +1275,7 @@
     white-space: nowrap;
 }
 
-.gar{
+.gar {
     font-family: 'Termina Test', sans-serif;
     font-size: 3rem;
     font-weight: 500;
@@ -1283,14 +1285,14 @@
     transform: rotate(5deg);
 }
 
-.gallery{
+.gallery {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 0.5rem;
     width: 100%;
 }
 
-.gallery1{
+.gallery1 {
     font-family: 'Termina Test', sans-serif;
     font-size: 1.8rem;
     font-weight: 400;
@@ -1299,20 +1301,20 @@
     justify-content: space-between;
 }
 
-.gall04{
+.gall04 {
     font-family: 'Pretendard', sans-serif;
     font-size: 3.5rem;
     font-weight: 200;
     letter-spacing: 0;
 }
 
-.gallery img{
+.gallery img {
     width: 100%;
     height: 100%;
-    object-fit: cover;  
+    object-fit: cover;
 }
 
-.gallery0{
+.gallery0 {
     font-family: 'Termina Test', sans-serif;
     font-size: 1.3rem;
     font-weight: 400;
@@ -1324,28 +1326,28 @@
     padding: 1rem 0;
 }
 
-.gallery0 a{
+.gallery0 a {
     color: inherit;
     text-decoration: none;
 }
 
-.gall0txt{
+.gall0txt {
     font-family: 'Termina Test', sans-serif;
     font-size: 1.2rem;
     font-weight: 400;
 }
 
-.gallery0 a:hover{
+.gallery0 a:hover {
     color: #ff3a3a;
 }
 
 
-.gallery2 img{
+.gallery2 img {
     filter: grayscale(100%) contrast(90%);
     transition: filter 0.3s ease;
 }
 
-.gallery2 img:hover{
+.gallery2 img:hover {
     filter: grayscale(0%) contrast(100%);
 }
 
