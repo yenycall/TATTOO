@@ -1,6 +1,5 @@
 .wave{
     display: flex;
-    margin-top: 10rem;
 }
 
 .photoA{
@@ -9,8 +8,138 @@
 
 .tatW{
     width: 50%;
-    padding: 1.5rem 0 0 2rem;
+    padding: 1.5rem 0 0 3rem;
 }
+
+.tatW1{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    width: 80%;
+    margin-top: 4rem;
+}
+
+.tatW2{
+    display: flex;
+    justify-content: center;
+    margin-top: -7.5vw;
+    margin-bottom: -18rem;
+}
+
+.headTitle{
+    margin-top: 9rem;
+}
+
+.headLine{
+    font-family: 'Termina Test',sans-serif;
+    font-size:2rem;
+    font-weight: 500;
+}
+
+.tatW2 img{
+    transform: rotate(-70deg);
+    position: relative;
+    z-index: -1;
+}
+
+.diary{
+    aspect-ratio: 1/1;
+    height: 100%;
+    padding: 1rem;
+    border-radius: 0.7rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.diaryD{
+    font-family: 'Termina Test', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 400;
+    color: #aaaaaa;
+}
+
+.diaryP{
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.diaryP0{
+    font-size: 0.9rem;
+    font-weight: 400;
+    font-family: 'Termina Test', sans-serif;
+}
+
+.diaryTxt{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.diaryTxt0{
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: 'Termina Test', sans-serif;
+    background-color: #ff3a3a;
+    color: #212121;
+}
+
+.diaryTxt2{
+    font-size: 0.8rem;
+    font-weight: 300;
+    color: #888888;
+    line-height: 1.5rem;
+}
+
+
+.diary01{
+    transform: rotate(10deg);
+    background-color: #eaeaea;
+}
+
+.diary02{
+    transform: rotate(-15deg);
+    background-color: #212121;
+    color: white;
+}
+
+.diary03{
+    transform: rotate(5deg);
+    background-color: #eaeaea;
+}
+
+.diary04{
+    transform: rotate(-5deg);
+    background-color: #212121;
+    color: white;
+}
+
+
+.diary05{
+    transform: rotate(13deg);
+    background-color: #eaeaea;
+}
+
+.diary06{
+    transform: rotate(-10deg);
+    background-color: #212121;
+    color: white;
+}
+
+.diary:hover{
+    transform: rotate(0deg);
+    outline: 1.9px solid #ff3a3a;
+    position: relative;
+    z-index: 2;
+}
+
+
+
+
+
+
+
 
 .grid-container {
     display: grid;
@@ -36,11 +165,9 @@
     font-weight: 200;
     display: block;
     margin: 1rem 0;
-    width: 25%;
-    margin-right: 25%;
-    padding: 0.2rem 0.5rem;
-    color: #000;
-    background-color: #f5f5f5;
+    padding: 0 0.5rem;
+    color: #fff;
+    background-color: #212121;
     border: none;
     cursor: pointer;
     text-align: left;
@@ -1095,4 +1222,174 @@
     color: white;
     border-radius: 0.7rem 0.7rem 0rem 0.7rem;
     margin-left: 4.15rem;
+}
+
+.gallType{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10rem;
+}
+
+
+.gall01{
+    font-family: 'Termina Test', sans-serif;
+    font-size: 3rem;
+    font-weight: 500;
+    white-space: nowrap;
+    margin-bottom: 1rem;
+}
+
+.gall02{
+    display: flex;
+    white-space: nowrap;
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+}
+
+.gall2-1{
+    font-family: 'Termina Test', sans-serif;
+    font-size: 3rem;
+    font-weight: 500;
+    color: #000;
+}
+
+.gall2-2{
+    font-family: 'Termina Test', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #000;
+    padding: 0 0.5rem;
+    white-space: nowrap;
+}
+
+.gall03{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    font-family: 'Termina Test', sans-serif;
+    font-size: 3rem;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.gar{
+    font-family: 'Termina Test', sans-serif;
+    font-size: 3rem;
+    font-weight: 500;
+    background-color: #ff3a3a;
+    color: #000;
+    padding: 0 0.5rem;
+    transform: rotate(5deg);
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.gallery1{
+    font-family: 'Termina Test', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.gall04{
+    font-family: 'Pretendard', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 200;
+    letter-spacing: 0;
+}
+
+.gallery img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  
+}
+
+.gallery0{
+    font-family: 'Termina Test', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #212121;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.gallery0 a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.gall0txt{
+    font-family: 'Termina Test', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.gallery0 a:hover{
+    color: #ff3a3a;
+}
+
+.gallery2 img{
+    filter: grayscale(100%) contrast(90%);
+    transition: filter 0.3s ease;
+}
+
+.gallery2 img:hover{
+    filter: grayscale(0%) contrast(100%);
+}
+
+
+.color-toggle {
+    position: relative;
+    width: 60px;
+    height: 30px;
+    background-color: #aaaaaa;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    margin-top: -15rem;
+    transition: background-color 0.3s ease;
+}
+
+.color-toggle.active {
+    background-color: #ff3a3a;
+}
+
+.toggle-slider {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.color-toggle.active .toggle-slider {
+    transform: translateX(30px);
+}
+
+.toggle-text {
+    position: absolute;
+    left: 70px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0.9rem;
+    white-space: nowrap;
+    font-family: 'Termina Test', sans-serif;
+}
+
+.color-mode .gallery2 img {
+    filter: none;
 }

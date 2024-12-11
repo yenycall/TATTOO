@@ -5,6 +5,7 @@
     <title>TATTOO</title>
     <link rel="icon" href="img/favicon.ico" type="img/png">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="content.css">
 </head>
 <body>
 <div class="container">
@@ -25,14 +26,53 @@
 
 
                 <div class="pageNum">
-                    <span class="terF">#_3</span>
+                    <span class="terF"><a href="3.html">#_3</a></span>
                 </div>
             </nav>
         </div>
     </header>
 
+    <div class="gallType">
+            <div class="gall01">I LIVE IN <span class="gar">GARDEN HOUSE</span></div>
+            <div class="gall gall03">THIS <span class="gar">PLANT AREA</span> IS GROWN BY</div>
+    </div>
 
+    <div class="gall gall02">
+        <div class="gall2-1">BAE JAE HYUN</div>
+        <div class="gall2-2">*ARTIST &nbsp;*MOM &nbsp;*GARDENER</div>
+    </div>
 
+    <div class="gallery">
+        <div class="gallery1">
+            Online Gallery
+
+            <button id="colorToggle" class="color-toggle">
+                <span class="toggle-slider"></span>
+                <!-- <span class="toggle-text">Color Mode</span> -->
+            </button>
+
+            <span class="gall04">--></span>
+        </div>
+        
+        <div class="gallery2"><img src="gallery/G01.jpeg"></div>
+        <div class="gallery2"><img src="gallery/G02.jpeg"></div>
+        <div class="gallery2"><img src="gallery/G03.jpeg"></div>
+        <div class="gallery2"><img src="gallery/G04.jpeg"></div>
+        <div class="gallery2"></div>
+        <div class="gallery2"><img src="gallery/G05.jpeg"></div>
+        <div class="gallery2"><img src="gallery/G06.jpeg"></div>
+        <div class="gallery2"><img src="gallery/G07.jpeg"></div>
+        <div class="gallery2"><img src="gallery/G08.jpeg"></div>
+        <div class="gallery2"></div>
+        <div class="gallery2"><img src="gallery/G09.jpeg"></div>
+        <div class="gallery2"><img src="gallery/G10.jpeg"></div>
+        <div class="gallery2"><img src="gallery/G11.jpeg"></div>
+        <div class="gallery0">
+            <div class="gall0txt">Work By. 배재현</div>
+            <a href="https://www.instagram.com/baebaesisi">@baebaesisi</a>
+        </div>
+
+    </div>
 
 
     <footer>
@@ -49,8 +89,8 @@
                 <div class="contact-info">
                     <a href="mailto:yenycall817@gmail.com" class="email">yenycall817@gmail.com</a>
                     <div class="personal-info">
-                        <span><a href="https://yenycall.github.io/">심민지 | Shim Min Ji</a></span>
-                        <span class="instagram"><a href="https://instagram.com/yenycall">@yenycall</a></span>
+                        <span><a href="https://yenycall.github.io/" target="_blank">심민지 | Shim Min Ji</a></span>
+                        <span class="instagram"><a href="https://instagram.com/yenycall" target="_blank">@yenycall</a></span>
                         <span>Kaywon Art Design</span>
                     </div>
                 </div>
@@ -59,6 +99,29 @@
         </div>
     </footer>
 </div>
+
+
+<script>
+
+document.addEventListener('DOMContentLoaded', function() {
+    const colorToggle = document.getElementById('colorToggle');
+    const gallery = document.querySelector('.gallery');
+    
+    colorToggle.addEventListener('click', function() {
+        this.classList.toggle('active');
+        gallery.classList.toggle('color-mode');
+        
+        // 토글 텍스트 변경
+        const toggleText = this.querySelector('.toggle-text');
+        if (this.classList.contains('active')) {
+            toggleText.textContent = 'B&W Mode';
+        } else {
+            toggleText.textContent = 'Color Mode';
+        }
+    });
+});
+
+</script>
 
 </body>
 </html>
