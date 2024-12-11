@@ -1,16 +1,15 @@
 .wave{
     display: flex;
+    margin-top: 10rem;
 }
 
 .photoA{
     width: 50%;
-    margin-top: 5rem;
 }
 
 .tatW{
     width: 50%;
-    padding: 2rem;
-    margin-top: 5rem;
+    padding: 1.5rem 0 0 2rem;
 }
 
 .grid-container {
@@ -32,23 +31,30 @@
     transition: transform 0.3s ease;
   }
 
-  button {
+  .photoA button {
     font-size: 0.9rem;
     font-weight: 200;
     display: block;
     margin: 1rem 0;
-    padding: 1rem 0;
-    background-color: #00000000;
-    color: black;
+    width: 25%;
+    margin-right: 25%;
+    padding: 0.2rem 0.5rem;
+    color: #000;
+    background-color: #f5f5f5;
     border: none;
-    border-radius: 50px;
     cursor: pointer;
+    text-align: left;
   }
 
   .terCon {
     font-family: 'Termina Test', sans-serif;
-    font-size: 0.9rem;
+    font-size: 1.5rem;
     font-weight: 400;
+}
+
+.buttonTxt{
+    display: flex;
+    align-items: center;
 }
 
   button:hover {
@@ -815,6 +821,8 @@
     font-weight: 500;
     padding: 0.5rem 1rem;
     background-color: #101010;
+    border: none;
+    border-radius: 2rem;
     margin-top: 1rem;
     transform: all 0.3s ease;
 }
@@ -1086,4 +1094,5 @@
     background-color: #212121;
     color: white;
     border-radius: 0.7rem 0.7rem 0rem 0.7rem;
+    margin-left: 4.15rem;
 }
