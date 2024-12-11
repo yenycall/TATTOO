@@ -636,7 +636,9 @@ sup{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     color: #fff;
-    padding: 2rem;
+    margin-top: 1.5rem;
+    margin-left: 2rem;
+    /* padding: 2rem; */
   }
 
 
@@ -679,14 +681,14 @@ sup{
 }
 
 .profTS{
-    margin-bottom: 3rem;
     font-family: 'Termina Test', sans-serif;
     font-size: 2rem;
     font-weight: 400;
+    width: fit-content;
 }
 
 .proftxtS{
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
     font-size: 1.05rem;
     font-weight: 500;
 }
