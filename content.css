@@ -1339,6 +1339,7 @@
     color: #ff3a3a;
 }
 
+
 .gallery2 img{
     filter: grayscale(100%) contrast(90%);
     transition: filter 0.3s ease;
@@ -1348,6 +1349,14 @@
     filter: grayscale(0%) contrast(100%);
 }
 
+.gallery2-2 {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
 
 .color-toggle {
     position: relative;
