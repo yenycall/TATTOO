@@ -34,6 +34,13 @@ html {
     color: #212121;
 }
 
+.titleNC{
+    font-family: 'Termina Test', sans-serif;
+    font-size: 5.5vw; /*--3.5vh--*/
+    font-weight: 500;
+    color: #fff;
+}
+
 .title2 {
     font-family: 'Termina Test', sans-serif;
     font-size: 17rem; /*--3.5vh--*/
