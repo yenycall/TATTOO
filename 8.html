@@ -5,6 +5,7 @@
     <title>TATTOO</title>
     <link rel="icon" href="img/favicon.ico" type="img/png">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="content.css">
 </head>
 <body>
 <div class="container">
@@ -25,12 +26,106 @@
 
 
                 <div class="pageNum">
-                    <span class="terF">#_8</span>
+                    <span class="terF"><a href="8.html">#_8</a></span>
                 </div>
             </nav>
         </div>
     </header>
 
+    <div class="timelineT">TATTOO HISTORY <span class="tlNum">(2023 - 2024)</span></div>
+
+    <div class="timeLine">
+        <div class="tl tl01">
+            <div class="tlDate">
+                <span class="tlYear">2023</span> <br>
+                <span class="tlMonth">-10.13</span>
+            </div>
+
+            <div class="tlInfo">
+                <span class="tattooist"><a href="https://www.instagram.com/flyingonyourmotorcycle" target="_blank">@flyingonyourmotorcycle</a> 이랑 利 朗 </span> <br>
+                <span class="tlItxt">Wave 파도</span>
+            </div>
+        </div>
+
+        <div class="tl tl02">
+            <div class="tlDate">
+                <span class="tlYear">2023</span> <br>
+                <span class="tlMonth">-11.17</span>
+            </div>
+
+            <div class="tlInfo">
+                <span class="tattooist"><a href="https://www.instagram.com/themildtown" target="_blank">@themildtown</a> SoundWaveTattoo</span> <br>
+                <span class="tlItxt">Sound Wave 파형</span>
+            </div>
+        </div>
+
+        <div class="tl tl03">
+            <div class="tlDate">
+                <span class="tlYear">2024</span> <br>
+                <span class="tlMonth">-02.26</span>
+            </div>
+
+            <div class="tlInfo">
+                <span class="tattooist"><a href="https://www.instagram.com/pokey.kim" target="_blank">@pokey.kim</a> 포키</span> <br>
+                <span class="tlItxt">Plant Area 식물</span>
+            </div>
+
+        </div>
+
+        <div class="tl tl04">
+            <div class="tlDate">
+                <span class="tlYear">2024</span> <br>
+                <span class="tlMonth">-02.26</span>
+            </div>
+
+            <div class="tlInfo">
+                <span class="tattooist"><a href="https://www.instagram.com/pokey.kim" target="_blank">@pokey.kim</a> 포키</span> <br>
+                <span class="tlItxt">Symbol 추상 심볼</span>
+            </div>
+        </div>
+
+        <div class="tl tl05">
+            <div class="tlDate">
+                <span class="tlYear">2024</span> <br>
+                <span class="tlMonth">-03.08</span>
+            </div>
+
+            <div class="tlInfo">
+                <span class="tattooist"><a href="https://www.instagram.com/chimney_tattoo target="_blank"">@chimney_tattoo</a> 침니 타투</span> <br>
+                <span class="tlItxt">Jelly Fish 해파리</span>
+            </div>
+        </div>
+
+        <div class="tl tl06">
+            <div class="tlDate">
+                <span class="tlYear">2024</span> <br>
+                <span class="tlMonth">-04.21</span>
+            </div>
+
+            <div class="tlInfo">
+                <span class="tattooist"><a href="https://www.instagram.com/fogpoke" target="_blank">@fogpoke</a> Fog</span> <br>
+                <span class="tlItxt">Peach 복숭아</span>
+            </div>
+        </div>
+
+        <div class="tl tl07">
+            <div class="tlDate">
+                <span class="tlYear">2024</span> <br>
+                <span class="tlMonth">-12.07</span>
+            </div>
+
+            <div class="tlInfo">
+                <span class="tattooist"><a href="https://www.instagram.com/huewho.ink" target="_blank">@huewho.ink</a> 휴후</span> <br>
+                <span class="tlItxt">Walk Around 산책</span>
+            </div>
+        </div>
+
+        </div>
+
+
+        <div class="timelineT">OFF THE RECORD <span class="tlNum">private interview</span></div>
+
+        <div class="timelineT">Design <span class="tlNum">A to Z</span></div>
 
 
 
@@ -49,8 +144,8 @@
                 <div class="contact-info">
                     <a href="mailto:yenycall817@gmail.com" class="email">yenycall817@gmail.com</a>
                     <div class="personal-info">
-                        <span><a href="https://yenycall.github.io/">심민지 | Shim Min Ji</a></span>
-                        <span class="instagram"><a href="https://instagram.com/yenycall">@yenycall</a></span>
+                        <span><a href="https://yenycall.github.io/" target="_blank">심민지 | Shim Min Ji</a></span>
+                        <span class="instagram"><a href="https://instagram.com/yenycall" target="_blank">@yenycall</a></span>
                         <span>Kaywon Art Design</span>
                     </div>
                 </div>
@@ -59,6 +154,100 @@
         </div>
     </footer>
 </div>
+
+<script>
+
+    document.addEventListener('DOMContentLoaded', () => {
+        const timeline = document.querySelector('.timeLine');
+        
+        // 휠 이벤트 처리
+        timeline.addEventListener('wheel', (e) => {
+            const rect = timeline.getBoundingClientRect();
+            const isMouseOver = (
+                e.clientX >= rect.left &&
+                e.clientX <= rect.right &&
+                e.clientY >= rect.top &&
+                e.clientY <= rect.bottom
+            );
+    
+            // 마우스가 timeline 위에 있을 때만 가로 스크롤 처리
+            if (isMouseOver) {
+                // Shift 키가 눌려있지 않을 때만 가로 스크롤로 변환
+                if (!e.shiftKey) {
+                    e.preventDefault();
+                    timeline.scrollLeft += e.deltaY * 1.2;
+                }
+            }
+        }, { passive: false });
+    
+        // 터치 이벤트 처리
+        let isDown = false;
+        let startX;
+        let scrollLeft;
+    
+        timeline.addEventListener('touchstart', (e) => {
+            isDown = true;
+            startX = e.touches[0].pageX - timeline.offsetLeft;
+            scrollLeft = timeline.scrollLeft;
+        });
+    
+        timeline.addEventListener('touchend', () => {
+            isDown = false;
+        });
+    
+        timeline.addEventListener('touchmove', (e) => {
+            if (!isDown) return;
+            
+            // timeline 영역 내에서만 터치 이벤트 처리
+            const rect = timeline.getBoundingClientRect();
+            const touch = e.touches[0];
+            if (
+                touch.clientX >= rect.left &&
+                touch.clientX <= rect.right &&
+                touch.clientY >= rect.top &&
+                touch.clientY <= rect.bottom
+            ) {
+                e.preventDefault();
+                const x = touch.pageX - timeline.offsetLeft;
+                const walk = (x - startX) * 2;
+                timeline.scrollLeft = scrollLeft - walk;
+            }
+        }, { passive: false });
+    });
+
+
+
+
+
+    document.addEventListener('DOMContentLoaded', () => {
+  const timeline = document.querySelector('.timeLine');
+  const timelineItems = document.querySelectorAll('.tl');
+
+  // 초기 체크
+  checkTimelineItems();
+
+  // 스크롤 이벤트
+  timeline.addEventListener('scroll', () => {
+    checkTimelineItems();
+  });
+
+  function checkTimelineItems() {
+    const triggerPoint = timeline.offsetWidth * 0.8; // 타임라인 너비의 80% 지점
+
+    timelineItems.forEach(item => {
+      // 각 아이템의 왼쪽 경계가 트리거 포인트를 지났는지 확인
+      const itemLeft = item.offsetLeft - timeline.scrollLeft;
+      
+      if (itemLeft < triggerPoint) {
+        item.classList.add('show');
+      } else {
+        item.classList.remove('show');
+      }
+    });
+  }
+});
+
+</script>
 
 </body>
 </html>
