@@ -65,7 +65,31 @@
 
 
         <div class="profile2">
-            dd
+
+            <div class="card">
+
+                <div class="card-front">
+                    <div class="private">TOP SECRET!</div>
+                </div>
+
+                <div class="card-back">
+                    <div class="secret-content">
+                        <div class="profTS">Private Profile</div>
+                        <div class="profTS"></div>
+                        <div class="proftxtS">MBTI</div>
+                        <div class="proftxtS0">INTP 논리적인 사색가<br>#집순이 #전략가 #몽상가</div>
+                        <div class="proftxtS">HOBBY</div>
+                        <div class="proftxtS0">TATTOO | 드라마 | 독서 | 웹툰 보기<br>코딩하기!</div>
+                        <div class="proftxtS">LOVE</div>
+                        <div class="proftxtS0">집, 가족, 친구들, 연애 프로그램</div>
+                        <div class="proftxtS">HATE</div>
+                        <div class="proftxtS0">벌레, 브로콜리</div>
+
+                    </div>
+                </div>
+
+            </div>
+
         </div>
 
 
@@ -178,6 +202,11 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+document.querySelector('.profile2 .card').addEventListener('click', function() {
+  this.classList.toggle('flipped');
+});
+
 </script>
 </body>
 </html>
