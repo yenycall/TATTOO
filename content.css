@@ -513,7 +513,7 @@
     justify-self: start;
 }
 
-sup{
+.tg sup{
     position: relative;
     top: -5rem;
     right: -6.5rem;
